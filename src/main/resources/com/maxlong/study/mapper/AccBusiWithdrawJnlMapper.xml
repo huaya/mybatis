@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.maxlong.study.mapper.AccBusiWithdrawJnlMapper">
+    <resultMap id="BaseResultMap" type="com.maxlong.study.model.AccBusiWithdrawJnl">
+        <id column="BUSI_SERIAL" jdbcType="CHAR" property="busiSerial"/>
+        <result column="RECORD_ID" jdbcType="CHAR" property="recordId"/>
+        <result column="TRAN_ATTRIBUTE" jdbcType="CHAR" property="tranAttribute"/>
+        <result column="BUSI_KIND" jdbcType="CHAR" property="busiKind"/>
+        <result column="BUSI_TYPE" jdbcType="CHAR" property="busiType"/>
+        <result column="STAT" jdbcType="VARCHAR" property="stat"/>
+        <result column="ORG_SERIAL" jdbcType="CHAR" property="orgSerial"/>
+        <result column="REVERSE_FLAG" jdbcType="CHAR" property="reverseFlag"/>
+        <result column="CANCEL_FLAG" jdbcType="CHAR" property="cancelFlag"/>
+        <result column="CONTRACT_ID" jdbcType="VARCHAR" property="contractId"/>
+        <result column="ORDER_ID" jdbcType="VARCHAR" property="orderId"/>
+        <result column="ACC_BATCH" jdbcType="VARCHAR" property="accBatch"/>
+        <result column="WD_BATCH" jdbcType="VARCHAR" property="wdBatch"/>
+        <result column="WD_PRODUCT_CODE" jdbcType="CHAR" property="wdProductCode"/>
+        <result column="WD_INSTICODE" jdbcType="VARCHAR" property="wdInsticode"/>
+        <result column="WD_TRAN_USER_ID" jdbcType="VARCHAR" property="wdTranUserId"/>
+        <result column="WD_TRAN_DATETIME" jdbcType="VARCHAR" property="wdTranDatetime"/>
+        <result column="WD_TRAN_ACCOUNT_NO" jdbcType="VARCHAR" property="wdTranAccountNo"/>
+        <result column="WD_TRAN_ID" jdbcType="VARCHAR" property="wdTranId"/>
+        <result column="WD_TRAN_TYPE" jdbcType="CHAR" property="wdTranType"/>
+        <result column="STL_TYPE" jdbcType="CHAR" property="stlType"/>
+        <result column="WTDRW_MODE" jdbcType="CHAR" property="wtdrwMode"/>
+        <result column="WD_TRAN_AMT" jdbcType="VARCHAR" property="wdTranAmt"/>
+        <result column="WD_TRAN_FEE_AMT" jdbcType="VARCHAR" property="wdTranFeeAmt"/>
+        <result column="WD_TRAN_CURRENCY" jdbcType="VARCHAR" property="wdTranCurrency"/>
+        <result column="WD_TRAN_FEE_TYPE" jdbcType="CHAR" property="wdTranFeeType"/>
+        <result column="WD_TRAN_APY_DATETIME" jdbcType="VARCHAR" property="wdTranApyDatetime"/>
+        <result column="WD_TRAN_SIGNATURE" jdbcType="VARCHAR" property="wdTranSignature"/>
+        <result column="PVD_RHG_ACCOUNT_NO" jdbcType="VARCHAR" property="pvdRhgAccountNo"/>
+        <result column="PVD_RHG_BANK_NAME" jdbcType="VARCHAR" property="pvdRhgBankName"/>
+        <result column="PVD_RHG_ACCOUNT_FLAG" jdbcType="CHAR" property="pvdRhgAccountFlag"/>
+        <result column="PVD_RHG_ACCNAME" jdbcType="VARCHAR" property="pvdRhgAccname"/>
+        <result column="PVD_RHG_CNAPS" jdbcType="VARCHAR" property="pvdRhgCnaps"/>
+        <result column="WD_TRAN_CMP_DATETIME" jdbcType="VARCHAR" property="wdTranCmpDatetime"/>
+        <result column="PAY_GROUP" jdbcType="VARCHAR" property="payGroup"/>
+        <result column="PAY_PRIORITY" jdbcType="CHAR" property="payPriority"/>
+        <result column="COMBINE_FLAG" jdbcType="CHAR" property="combineFlag"/>
+        <result column="EPAY_ID" jdbcType="CHAR" property="epayId"/>
+        <result column="ORG_EPAY_ID" jdbcType="CHAR" property="orgEpayId"/>
+        <result column="INSERT_O" jdbcType="VARCHAR" property="insertO"/>
+        <result column="INSERT_TIME" jdbcType="VARCHAR" property="insertTime"/>
+        <result column="UPDATE_TIME" jdbcType="VARCHAR" property="updateTime"/>
+        <result column="ADDITIONAL1" jdbcType="VARCHAR" property="additional1"/>
+        <result column="ADDITIONAL2" jdbcType="VARCHAR" property="additional2"/>
+        <result column="BATCH_DATE" jdbcType="VARCHAR" property="batchDate"/>
+        <result column="PRX_INSTI" jdbcType="VARCHAR" property="prxInsti"/>
+        <result column="PRX_PRODUCT" jdbcType="CHAR" property="prxProduct"/>
+        <result column="WD_USER_NAME" jdbcType="VARCHAR" property="wdUserName"/>
+        <result column="WD_USER_NAME2" jdbcType="VARCHAR" property="wdUserName2"/>
+        <result column="WD_OTRAN_FEE_AMT" jdbcType="VARCHAR" property="wdOtranFeeAmt"/>
+        <result column="PAY_ACCOUNT_NO" jdbcType="VARCHAR" property="payAccountNo"/>
+        <result column="PAY_ACCNAME" jdbcType="VARCHAR" property="payAccname"/>
+        <result column="PAY_BANK_NAME" jdbcType="VARCHAR" property="payBankName"/>
+        <result column="PAY_CNAPS" jdbcType="VARCHAR" property="payCnaps"/>
+        <result column="WD_ACC_SELECT" jdbcType="CHAR" property="wdAccSelect"/>
+        <result column="WD_CHANNEL_SELECT" jdbcType="CHAR" property="wdChannelSelect"/>
+        <!--<result column="SOURCE_SERIAL" jdbcType="VARCHAR" property="sourceSerial" />-->
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        BUSI_SERIAL, RECORD_ID, TRAN_ATTRIBUTE, BUSI_KIND, BUSI_TYPE, STAT, ORG_SERIAL, REVERSE_FLAG,
+        CANCEL_FLAG, CONTRACT_ID, ORDER_ID, ACC_BATCH, WD_BATCH, WD_PRODUCT_CODE, WD_INSTICODE,
+        WD_TRAN_USER_ID, WD_TRAN_DATETIME, WD_TRAN_ACCOUNT_NO, WD_TRAN_ID, WD_TRAN_TYPE,
+        STL_TYPE, WTDRW_MODE, WD_TRAN_AMT, WD_TRAN_FEE_AMT, WD_TRAN_CURRENCY, WD_TRAN_FEE_TYPE,
+        WD_TRAN_APY_DATETIME, WD_TRAN_SIGNATURE, PVD_RHG_ACCOUNT_NO, PVD_RHG_BANK_NAME, PVD_RHG_ACCOUNT_FLAG,
+        PVD_RHG_ACCNAME, PVD_RHG_CNAPS, WD_TRAN_CMP_DATETIME, PAY_GROUP, PAY_PRIORITY, COMBINE_FLAG,
+        EPAY_ID, ORG_EPAY_ID, INSERT_O, INSERT_TIME, UPDATE_TIME, ADDITIONAL1, ADDITIONAL2,
+        BATCH_DATE, PRX_INSTI, PRX_PRODUCT, WD_USER_NAME, WD_USER_NAME2, WD_OTRAN_FEE_AMT,
+        PAY_ACCOUNT_NO, PAY_ACCNAME, PAY_BANK_NAME, PAY_CNAPS, WD_ACC_SELECT, WD_CHANNEL_SELECT
+    </sql>
+
+    <select id="selectByBusiSerial" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from ACC_BUSI_WITHDRAW_JNL
+        where BUSI_SERIAL = #{busiSerial,jdbcType=CHAR}
+    </select>
+</mapper>

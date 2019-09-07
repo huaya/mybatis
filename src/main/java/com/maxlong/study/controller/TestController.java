@@ -52,7 +52,7 @@ public class TestController {
 
 
     @RequestMapping(value = {"/getbotton"})
-    public String getbotton() {
+    public String getbotton()    {
         return "botton";
     }
 

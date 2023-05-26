@@ -11,7 +11,7 @@
         <warName>mybatis</warName>
         <port>8081</port>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <springBootVersion>1.4.1.RELEASE</springBootVersion>
+        <springBootVersion>2.5.15</springBootVersion>
     </properties>
 
     <repositories>
